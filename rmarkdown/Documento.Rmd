@@ -25,9 +25,11 @@ shape = merge(shape,data,'cod_upz',all.x=T)
 
 # Titulo
 
+Este es el titulo
+
 ## Subtitulo
 
-
+Este es el subtitulo
 
 ### Código de R
 
@@ -46,13 +48,13 @@ print('Hola')
 
 ### Cargar imagen
 
-![Nota:...](figures/run_class.gif)
+![](figures/run_class.gif)
 
 ### Mapa 
 
 Hasta ahora solo esta mostrando el código pero no lo está evaluando.
 
-```{r , eval=F , echo=T}
+```{r , eval=T , echo=F}
 # Pintar el mapa
 ggplot() + geom_sf(data = shape , color = 'gray', aes(fill=casos_06), size = 0.5 ,) + 
 scale_fill_viridis(name="Casos",na.value = "white",direction = 1,option = 'inferno') +
@@ -62,3 +64,4 @@ ggtitle('Casos de Covid-19 en junio por UPZ') + xlab('') + ylab('') +
 theme_bw()
 ```
 
+<h1> Hola </h1> 

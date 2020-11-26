@@ -1,0 +1,12 @@
+name: example_app
+title: example_app
+username:
+account: eduard-martinez
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3303297
+bundleId: 3906884
+url: https://eduard-martinez.shinyapps.io/example_app/
+when: 1606347752.04273
+asMultiple: FALSE
+asStatic: FALSE

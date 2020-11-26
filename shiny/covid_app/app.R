@@ -9,9 +9,7 @@ library(ggnewscale)
 library(viridis)
 
 ### Cargar bases de datos
-shape = st_read(dsn = 'data/UPZ.shp') %>% subset(UPlTipo==1) %>%
-        mutate(cod_upz=gsub('[^0-9]','',UPlCodigo) %>% as.numeric()) %>% .[,c('cod_upz','UPlNombre')]
-
+shape = readRDS(file = 'data/shape.rds')
 data = readRDS('data/Casos por upz.rds') %>% 
        dplyr::select(cod_upz,casos_03,casos_04,casos_05,casos_06,casos_07,casos_08,casos_09)
 
